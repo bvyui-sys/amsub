@@ -22,17 +22,34 @@ namespace Attendance_Monitoring_System
 
         private void OnTemplate(DPFP.Template template)
         {
-            this.Invoke(new Function(delegate ()
+            this.Invoke(new Action(delegate ()
             {
                 Template = template;
 
                 if (Template != null)
                 {
-                    MessageBox.Show("The fingerprint template is ready for fingerprint verification", "Fingerprint Enrollment.");
+                    MessageBox.Show("🎉 Fingerprint Template Ready!\n\n" +
+                                  "The fingerprint template has been successfully created and saved.\n\n" +
+                                  "✅ Template Status: Valid\n" +
+                                  "✅ Database: Updated\n" +
+                                  "✅ Employee: Ready for attendance\n\n" +
+                                  "The employee can now use fingerprint authentication.",
+                                  "Enrollment Complete", 
+                                  MessageBoxButtons.OK, 
+                                  MessageBoxIcon.Information);
                 }
                 else
                 {
-                    MessageBox.Show("The fingerprint template is not valid. Repeat fingerprint scanning", "Fingerprint Enrollment.");
+                    MessageBox.Show("❌ Template Creation Failed!\n\n" +
+                                  "The fingerprint template could not be created properly.\n\n" +
+                                  "Possible reasons:\n" +
+                                  "• Poor fingerprint quality\n" +
+                                  "• Insufficient fingerprint samples\n" +
+                                  "• Scanner connection issues\n\n" +
+                                  "Please try scanning again with better finger placement.",
+                                  "Enrollment Failed", 
+                                  MessageBoxButtons.OK, 
+                                  MessageBoxIcon.Warning);
                 }
             }));
         }
@@ -721,8 +738,15 @@ namespace Attendance_Monitoring_System
                
                 if (string.IsNullOrEmpty(selectedEmpId))
                 {
-                    MessageBox.Show("Please save the employee details first before enrolling fingerprint.",
-                                    "Missing Employee", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("⚠️ Employee Details Required!\n\n" +
+                                  "Please save the employee information first before enrolling fingerprint.\n\n" +
+                                  "Steps to follow:\n" +
+                                  "1. Fill in all employee details\n" +
+                                  "2. Click 'Save' button\n" +
+                                  "3. Then click 'Enroll' for fingerprint",
+                                  "Missing Employee Data", 
+                                  MessageBoxButtons.OK, 
+                                  MessageBoxIcon.Warning);
                     return;
                 }
 
@@ -735,8 +759,13 @@ namespace Attendance_Monitoring_System
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error during enrollment: " + ex.Message,
-                                "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("❌ Enrollment Error!\n\n" +
+                              "An unexpected error occurred during fingerprint enrollment.\n\n" +
+                              "Error Details: " + ex.Message + "\n\n" +
+                              "Please try again or contact system administrator if the problem persists.",
+                              "Enrollment Error", 
+                              MessageBoxButtons.OK, 
+                              MessageBoxIcon.Error);
             }
         }
     }
