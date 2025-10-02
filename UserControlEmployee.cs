@@ -15,6 +15,9 @@ namespace Attendance_Monitoring_System
 
         private void UserControlEmployee_Load(object sender, EventArgs e)
         {
+            // Add DataError event handler to handle display errors gracefully
+            dgvEmpList.DataError += DgvEmpList_DataError;
+            
             string query = @"
                 SELECT e.ID,
                        e.employee_code,
@@ -41,6 +44,17 @@ namespace Attendance_Monitoring_System
 
             dgvEmpList.DataSource = MySQL.Pull(query);
             SetupEmployeeGrid();
+        }
+
+        private void DgvEmpList_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            // Handle DataGridView errors gracefully
+            if (e.Exception is ArgumentException && e.Exception.Message.Contains("Parameter is not valid"))
+            {
+                // This is likely the fingerprint_template column trying to display as image
+                e.ThrowException = false;
+                dgvEmpList.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = "Binary Data";
+            }
         }
 
         private void SetupEmployeeGrid()

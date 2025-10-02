@@ -62,3 +62,6 @@ E:\projects\CSharp\amsub\obj\Debug\Attendan.EECA091C.Up2Date
 E:\projects\CSharp\amsub\obj\Debug\Attendance Monitoring System.exe
 E:\projects\CSharp\amsub\obj\Debug\Attendance Monitoring System.pdb
 E:\projects\CSharp\amsub\obj\Debug\Attendance Monitoring System.exe.config
+E:\projects\CSharp\amsub\obj\Debug\Attendance_Monitoring_System.attendance.resources
+E:\projects\CSharp\amsub\obj\Debug\Attendance_Monitoring_System.verify.resources
+E:\projects\CSharp\amsub\obj\Debug\Attendance_Monitoring_System.UserControlAttendance.resources

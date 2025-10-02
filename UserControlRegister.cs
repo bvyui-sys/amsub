@@ -80,6 +80,9 @@ namespace Attendance_Monitoring_System
 
         private void LoadEmployees()
         {
+            // Add DataError event handler to handle display errors gracefully
+            dgvReg.DataError += DgvReg_DataError;
+            
             string query = @"
         SELECT e.ID,
                e.employee_code,
@@ -724,6 +727,17 @@ namespace Attendance_Monitoring_System
         private void panel16_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void DgvReg_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            // Handle DataGridView errors gracefully
+            if (e.Exception is ArgumentException && e.Exception.Message.Contains("Parameter is not valid"))
+            {
+                // This is likely the fingerprint_template column trying to display as image
+                e.ThrowException = false;
+                dgvReg.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = "Binary Data";
+            }
         }
 
         private void label18_Click(object sender, EventArgs e)

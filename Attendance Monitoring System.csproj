@@ -195,6 +195,12 @@
     <Compile Include="UserControlRegister.Designer.cs">
       <DependentUpon>UserControlRegister.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlAttendance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlAttendance.Designer.cs">
+      <DependentUpon>UserControlAttendance.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlLeave.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -215,6 +221,18 @@
     </Compile>
     <Compile Include="UserControldb.Designer.cs">
       <DependentUpon>UserControldb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="attendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="attendance.Designer.cs">
+      <DependentUpon>attendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="verify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="verify.Designer.cs">
+      <DependentUpon>verify.cs</DependentUpon>
     </Compile>
     <Compile Include="view.cs">
       <SubType>Form</SubType>
@@ -259,6 +277,9 @@
     <EmbeddedResource Include="UserControlRegister.resx">
       <DependentUpon>UserControlRegister.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControlAttendance.resx">
+      <DependentUpon>UserControlAttendance.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControlLeave.resx">
       <DependentUpon>UserControlLeave.cs</DependentUpon>
     </EmbeddedResource>
@@ -276,6 +297,12 @@
     </Compile>
     <EmbeddedResource Include="UserControldb.resx">
       <DependentUpon>UserControldb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="attendance.resx">
+      <DependentUpon>attendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="verify.resx">
+      <DependentUpon>verify.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view.resx">
       <DependentUpon>view.cs</DependentUpon>
