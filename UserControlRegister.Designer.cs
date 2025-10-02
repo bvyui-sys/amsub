@@ -37,6 +37,7 @@
             this.tbcReg = new System.Windows.Forms.TabControl();
             this.tpEmp = new System.Windows.Forms.TabPage();
             this.btnEnroll = new Guna.UI2.WinForms.Guna2Button();
+            this.lblRequiredNote = new System.Windows.Forms.Label();
             this.dtp_birthdate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.cb_shift = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -138,6 +139,7 @@
             // 
             // tpEmp
             // 
+            this.tpEmp.Controls.Add(this.lblRequiredNote);
             this.tpEmp.Controls.Add(this.btnEnroll);
             this.tpEmp.Controls.Add(this.dtp_birthdate);
             this.tpEmp.Controls.Add(this.cb_shift);
@@ -210,6 +212,17 @@
             this.btnEnroll.Text = "ENROLL FINGERPRINT";
             this.btnEnroll.Click += new System.EventHandler(this.btnEnroll_Click);
             // 
+            // lblRequiredNote
+            // 
+            this.lblRequiredNote.AutoSize = true;
+            this.lblRequiredNote.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRequiredNote.ForeColor = System.Drawing.Color.Red;
+            this.lblRequiredNote.Location = new System.Drawing.Point(50, 750);
+            this.lblRequiredNote.Name = "lblRequiredNote";
+            this.lblRequiredNote.Size = new System.Drawing.Size(200, 17);
+            this.lblRequiredNote.TabIndex = 120;
+            this.lblRequiredNote.Text = "* Required fields must be filled";
+            // 
             // dtp_birthdate
             // 
             this.dtp_birthdate.BackColor = System.Drawing.Color.White;
@@ -280,7 +293,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(49, 23);
             this.label8.TabIndex = 114;
-            this.label8.Text = "Shift";
+            this.label8.Text = "Shift *";
             // 
             // panel2
             // 
@@ -299,7 +312,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(103, 23);
             this.label3.TabIndex = 111;
-            this.label3.Text = "Birth Date";
+            this.label3.Text = "Birth Date *";
             // 
             // cb_role
             // 
@@ -464,7 +477,7 @@
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(53, 23);
             this.label13.TabIndex = 97;
-            this.label13.Text = "Role";
+            this.label13.Text = "Role *";
             // 
             // panel17
             // 
@@ -483,7 +496,7 @@
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(184, 23);
             this.label20.TabIndex = 94;
-            this.label20.Text = "Employment Type";
+            this.label20.Text = "Employment Type *";
             // 
             // panel18
             // 
@@ -502,7 +515,7 @@
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(125, 23);
             this.label21.TabIndex = 91;
-            this.label21.Text = "Department";
+            this.label21.Text = "Department *";
             // 
             // datetimepicker_datehired
             // 
@@ -536,7 +549,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(113, 23);
             this.label9.TabIndex = 88;
-            this.label9.Text = "Date Hired";
+            this.label9.Text = "Date Hired *";
             // 
             // tb_Contact
             // 
@@ -575,7 +588,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 23);
             this.label4.TabIndex = 82;
-            this.label4.Text = "Contact";
+            this.label4.Text = "Contact *";
             // 
             // tb_Pos
             // 
@@ -614,7 +627,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(84, 23);
             this.label5.TabIndex = 79;
-            this.label5.Text = "Position";
+            this.label5.Text = "Position *";
             // 
             // tb_Address
             // 
@@ -653,7 +666,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(88, 23);
             this.label7.TabIndex = 76;
-            this.label7.Text = "Address";
+            this.label7.Text = "Address *";
             // 
             // tb_Lname
             // 
@@ -692,7 +705,7 @@
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(113, 23);
             this.label17.TabIndex = 70;
-            this.label17.Text = "Last Name";
+            this.label17.Text = "Last Name *";
             // 
             // tb_Mname
             // 
@@ -760,7 +773,7 @@
             this.pb_image.Location = new System.Drawing.Point(191, 19);
             this.pb_image.Name = "pb_image";
             this.pb_image.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.pb_image.Size = new System.Drawing.Size(241, 186);
+            this.pb_image.Size = new System.Drawing.Size(200, 200);
             this.pb_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb_image.TabIndex = 47;
             this.pb_image.TabStop = false;
@@ -808,7 +821,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(84, 23);
             this.label6.TabIndex = 16;
-            this.label6.Text = "Gender";
+            this.label6.Text = "Gender *";
             // 
             // panel1
             // 
@@ -827,7 +840,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(112, 23);
             this.label2.TabIndex = 1;
-            this.label2.Text = "First Name";
+            this.label2.Text = "First Name *";
             // 
             // tpDept
             // 
@@ -1363,6 +1376,7 @@
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblRequiredNote;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtp_birthdate;
         private Guna.UI2.WinForms.Guna2Button btnEnroll;
     }
