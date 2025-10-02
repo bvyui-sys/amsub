@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using System;
+using MySql.Data.MySqlClient;
 using System.Data;
 using System.Collections.Generic;
 
@@ -17,6 +18,39 @@ namespace Attendance_Monitoring_System
 
 
         public static readonly string ConnectionString = "Server=" + DatabaseServer + ";Port=" + MySQLPort + ";Database=" + Database + ";user id=" + UserID + ";password=" + Password + " ; Connection Reset=true; SslMode=None; AllowPublicKeyRetrieval=True; Convert Zero Datetime=True";
+
+        public static void CreateAttendanceTable()
+        {
+            try
+            {
+                using (MySqlConnection conn = new MySqlConnection(ConnectionString))
+                {
+                    conn.Open();
+                    string createTableQuery = @"
+                        CREATE TABLE IF NOT EXISTS attendance (
+                            id INT AUTO_INCREMENT PRIMARY KEY,
+                            employee_id INT NOT NULL,
+                            attendance_date DATE NOT NULL,
+                            time_in DATETIME NULL,
+                            time_out DATETIME NULL,
+                            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                            updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                            FOREIGN KEY (employee_id) REFERENCES employees(ID) ON DELETE CASCADE,
+                            INDEX idx_employee_date (employee_id, attendance_date),
+                            INDEX idx_attendance_date (attendance_date)
+                        )";
+                    
+                    using (MySqlCommand cmd = new MySqlCommand(createTableQuery, conn))
+                    {
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error creating attendance table: " + ex.Message);
+            }
+        }
         //static readonly string ConnectionString = "Server=127.0.0.1;Port=8000;Database=crud;user id=root;password=vincemgrm;" +
         //"Connection Reset=true;SslMode=None;AllowPublicKeyRetrieval=True;Convert Zero Datetime=True";
 

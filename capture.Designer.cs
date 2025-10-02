@@ -142,7 +142,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 473);
+            this.ClientSize = new System.Drawing.Size(900, 550);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.fname);
             this.Controls.Add(this.StatusLabel);

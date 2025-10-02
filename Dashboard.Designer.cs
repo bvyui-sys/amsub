@@ -53,10 +53,13 @@
             this.btnReports1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnLeave1 = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btnAttendance = new System.Windows.Forms.Button();
             this.userControlLeave1 = new Attendance_Monitoring_System.UserControlLeave();
             this.leave1 = new Attendance_Monitoring_System.UserControlDTR();
             this.userControlEmployee1 = new Attendance_Monitoring_System.UserControlEmployee();
             this.userControlRegister1 = new Attendance_Monitoring_System.UserControlRegister();
+            this.userControlAttendance1 = new Attendance_Monitoring_System.UserControlAttendance();
             this.userControldb1 = new Attendance_Monitoring_System.UserControldb();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -70,6 +73,7 @@
             this.sidebar.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -322,6 +326,7 @@
             this.sidebar.Controls.Add(this.pnRegistration);
             this.sidebar.Controls.Add(this.panel2);
             this.sidebar.Controls.Add(this.panel3);
+            this.sidebar.Controls.Add(this.panel4);
             this.sidebar.Controls.Add(this.pnLogout);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 124);
@@ -369,6 +374,35 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(261, 53);
             this.panel3.TabIndex = 15;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Transparent;
+            this.panel4.Controls.Add(this.btnAttendance);
+            this.panel4.Location = new System.Drawing.Point(2, 317);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(261, 53);
+            this.panel4.TabIndex = 16;
+            // 
+            // btnAttendance
+            // 
+            this.btnAttendance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(10)))), ((int)(((byte)(0)))));
+            this.btnAttendance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAttendance.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAttendance.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnAttendance.Image = ((System.Drawing.Image)(resources.GetObject("btnEmp.Image")));
+            this.btnAttendance.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAttendance.Location = new System.Drawing.Point(-16, -10);
+            this.btnAttendance.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnAttendance.Name = "btnAttendance";
+            this.btnAttendance.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnAttendance.Size = new System.Drawing.Size(287, 99);
+            this.btnAttendance.TabIndex = 0;
+            this.btnAttendance.Text = "        Attendance";
+            this.btnAttendance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAttendance.UseVisualStyleBackColor = false;
+            this.btnAttendance.Click += new System.EventHandler(this.btnAttendance_Click);
             // 
             // btnLeave1
             // 
@@ -456,6 +490,7 @@
             this.Controls.Add(this.leave1);
             this.Controls.Add(this.userControlEmployee1);
             this.Controls.Add(this.userControlRegister1);
+            this.Controls.Add(this.userControlAttendance1);
             this.Controls.Add(this.userControldb1);
             this.Controls.Add(this.sidebar);
             this.Controls.Add(this.panel1);
@@ -479,6 +514,7 @@
             this.sidebar.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -508,9 +544,12 @@
         private System.Windows.Forms.Button btnReports1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnLeave1;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button btnAttendance;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private UserControlEmployee userControlEmployee1;
         private UserControlDTR leave1;
         private UserControlLeave userControlLeave1;
+        private UserControlAttendance userControlAttendance1;
     }
 }

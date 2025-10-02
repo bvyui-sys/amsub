@@ -1,0 +1,67 @@
+E:\projects\CSharp\amsub\bin\Debug\Attendance Monitoring System.exe
+E:\projects\CSharp\amsub\bin\Debug\DPFPDevNET.dll
+E:\projects\CSharp\amsub\bin\Debug\DPFPEngNET.dll
+E:\projects\CSharp\amsub\bin\Debug\DPFPShrNET.dll
+E:\projects\CSharp\amsub\bin\Debug\Guna.UI2.dll
+E:\projects\CSharp\amsub\bin\Debug\MySql.Data.dll
+E:\projects\CSharp\amsub\bin\Debug\System.Memory.dll
+E:\projects\CSharp\amsub\bin\Debug\System.Resources.Extensions.dll
+E:\projects\CSharp\amsub\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\projects\CSharp\amsub\bin\Debug\dpHFtrEx.dll
+E:\projects\CSharp\amsub\bin\Debug\dpHMatch.dll
+E:\projects\CSharp\amsub\bin\Debug\Attendance Monitoring System.exe.config
+E:\projects\CSharp\amsub\bin\Debug\Attendance Monitoring System.pdb
+E:\projects\CSharp\amsub\bin\Debug\BouncyCastle.Crypto.dll
+E:\projects\CSharp\amsub\bin\Debug\Bunifu_UI_v1.5.3.dll
+E:\projects\CSharp\amsub\bin\Debug\DPFPGuiNET.dll
+E:\projects\CSharp\amsub\bin\Debug\DPFPVerNET.dll
+E:\projects\CSharp\amsub\bin\Debug\Google.Protobuf.dll
+E:\projects\CSharp\amsub\bin\Debug\K4os.Compression.LZ4.dll
+E:\projects\CSharp\amsub\bin\Debug\K4os.Compression.LZ4.Streams.dll
+E:\projects\CSharp\amsub\bin\Debug\K4os.Hash.xxHash.dll
+E:\projects\CSharp\amsub\bin\Debug\LiveCharts.dll
+E:\projects\CSharp\amsub\bin\Debug\MaterialSkin.dll
+E:\projects\CSharp\amsub\bin\Debug\System.Buffers.dll
+E:\projects\CSharp\amsub\bin\Debug\System.Numerics.Vectors.dll
+E:\projects\CSharp\amsub\bin\Debug\Ubiety.Dns.Core.dll
+E:\projects\CSharp\amsub\bin\Debug\ZstdNet.dll
+E:\projects\CSharp\amsub\bin\Debug\BouncyCastle.Crypto.xml
+E:\projects\CSharp\amsub\bin\Debug\Google.Protobuf.pdb
+E:\projects\CSharp\amsub\bin\Debug\Google.Protobuf.xml
+E:\projects\CSharp\amsub\bin\Debug\K4os.Compression.LZ4.xml
+E:\projects\CSharp\amsub\bin\Debug\K4os.Compression.LZ4.Streams.xml
+E:\projects\CSharp\amsub\bin\Debug\K4os.Hash.xxHash.xml
+E:\projects\CSharp\amsub\bin\Debug\LiveCharts.pdb
+E:\projects\CSharp\amsub\bin\Debug\LiveCharts.xml
+E:\projects\CSharp\amsub\bin\Debug\MySql.Data.xml
+E:\projects\CSharp\amsub\bin\Debug\System.Buffers.xml
+E:\projects\CSharp\amsub\bin\Debug\System.Memory.xml
+E:\projects\CSharp\amsub\bin\Debug\System.Numerics.Vectors.xml
+E:\projects\CSharp\amsub\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\projects\CSharp\amsub\obj\Debug\Attendance Monitoring System.csproj.AssemblyReference.cache
+E:\projects\CSharp\amsub\obj\Debug\Attendance_Monitoring_System.bio.resources
+E:\projects\CSharp\amsub\obj\Debug\Attendance_Monitoring_System.capture.resources
+E:\projects\CSharp\amsub\obj\Debug\Attendance_Monitoring_System.Dashboard.resources
+E:\projects\CSharp\amsub\obj\Debug\Attendance_Monitoring_System.Employee.resources
+E:\projects\CSharp\amsub\obj\Debug\Attendance_Monitoring_System.EmployeeForm.resources
+E:\projects\CSharp\amsub\obj\Debug\Attendance_Monitoring_System.EmployeeList.resources
+E:\projects\CSharp\amsub\obj\Debug\Attendance_Monitoring_System.enroll.resources
+E:\projects\CSharp\amsub\obj\Debug\Attendance_Monitoring_System.Form1.resources
+E:\projects\CSharp\amsub\obj\Debug\Attendance_Monitoring_System.Leavereq.resources
+E:\projects\CSharp\amsub\obj\Debug\Attendance_Monitoring_System.UserControlDTR.resources
+E:\projects\CSharp\amsub\obj\Debug\Attendance_Monitoring_System.UserControlEmployee.resources
+E:\projects\CSharp\amsub\obj\Debug\Attendance_Monitoring_System.UserControlRegister.resources
+E:\projects\CSharp\amsub\obj\Debug\Attendance_Monitoring_System.UserControlLeave.resources
+E:\projects\CSharp\amsub\obj\Debug\Attendance_Monitoring_System.Login.resources
+E:\projects\CSharp\amsub\obj\Debug\Attendance_Monitoring_System.Properties.Resources.resources
+E:\projects\CSharp\amsub\obj\Debug\Attendance_Monitoring_System.UserControldb.resources
+E:\projects\CSharp\amsub\obj\Debug\Attendance_Monitoring_System.view.resources
+E:\projects\CSharp\amsub\obj\Debug\Attendance Monitoring System.csproj.GenerateResource.cache
+E:\projects\CSharp\amsub\obj\Debug\Attendance Monitoring System.csproj.CoreCompileInputs.cache
+E:\projects\CSharp\amsub\obj\Debug\Attendan.EECA091C.Up2Date
+E:\projects\CSharp\amsub\obj\Debug\Attendance Monitoring System.exe
+E:\projects\CSharp\amsub\obj\Debug\Attendance Monitoring System.pdb
+E:\projects\CSharp\amsub\obj\Debug\Attendance Monitoring System.exe.config
+E:\projects\CSharp\amsub\obj\Debug\Attendance_Monitoring_System.attendance.resources
+E:\projects\CSharp\amsub\obj\Debug\Attendance_Monitoring_System.verify.resources
+E:\projects\CSharp\amsub\obj\Debug\Attendance_Monitoring_System.UserControlAttendance.resources

@@ -33,7 +33,15 @@ namespace Attendance_Monitoring_System
             userControlEmployee1.Dock = DockStyle.Fill;
             leave1.Dock = DockStyle.Fill;
             userControlLeave1.Dock = DockStyle.Fill;
-    
+            userControlAttendance1.Dock = DockStyle.Fill;
+            
+            // Set Dashboard as default view
+            userControldb1.Visible = true;
+            userControlRegister1.Visible = false;
+            userControlEmployee1.Visible = false;
+            leave1.Visible = false;
+            userControlLeave1.Visible = false;
+            userControlAttendance1.Visible = false;
 
         }
 
@@ -45,6 +53,7 @@ namespace Attendance_Monitoring_System
             userControlEmployee1.Visible = false;
             leave1.Visible = false;
             userControlLeave1.Visible = false;
+            userControlAttendance1.Visible = false;
 
 
 
@@ -65,6 +74,7 @@ namespace Attendance_Monitoring_System
             userControlEmployee1.Visible = true;
             leave1.Visible = false;
             userControlLeave1.Visible = false;
+            userControlAttendance1.Visible = false;
 
         }
 
@@ -76,6 +86,7 @@ namespace Attendance_Monitoring_System
             userControlEmployee1.Visible = false;
             leave1.Visible = false;
             userControlLeave1.Visible = false;
+            userControlAttendance1.Visible = false;
         }
 
 
@@ -110,6 +121,31 @@ namespace Attendance_Monitoring_System
             userControlEmployee1.Visible = false;
             leave1.Visible = true;
             userControlLeave1.Visible = false;
+            userControlAttendance1.Visible = false;
+        }
+
+        private void btnAttendance_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Hide all other user controls
+                userControldb1.Visible = false;
+                userControlRegister1.Visible = false;
+                userControlEmployee1.Visible = false;
+                leave1.Visible = false;
+                userControlLeave1.Visible = false;
+                
+                // Show attendance user control
+                userControlAttendance1.Visible = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("❌ Error opening Attendance section!\n\n" +
+                              "Error: " + ex.Message,
+                              "Attendance Error",
+                              MessageBoxButtons.OK,
+                              MessageBoxIcon.Error);
+            }
         }
 
         private void btnLeave1_Click(object sender, EventArgs e)
@@ -120,6 +156,7 @@ namespace Attendance_Monitoring_System
             userControlEmployee1.Visible = false;
             leave1.Visible = false;
             userControlLeave1.Visible = true;
+            userControlAttendance1.Visible = false;
         }
 
         private void userControlLeave1_Load(object sender, EventArgs e)
